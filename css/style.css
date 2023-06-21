@@ -24,14 +24,14 @@ nav {
 }
 
 nav ul {
-  float: right;
+  text-align: end;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
 nav ul li {
-  float: left;
+  display: inline-block;
 }
 
 nav ul li a {
@@ -101,7 +101,7 @@ nav ul li a:hover {
 }
 
 .hero {
-  float: right;
+  text-align: end;
   margin-top: -250px;
   margin-right: 100px;
 }
@@ -123,7 +123,7 @@ svg {
 
 .front-end {
   border-radius: 12px;
-  float: left;
+  margin-left: 20px;
   width: 40%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -138,8 +138,9 @@ svg {
 .back-end {
   border-radius: 12px;
   margin-top: 30px;
-  width: 40%;
   float: right;
+  margin-right: 20px;
+  width: 40%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -163,107 +164,93 @@ svg {
 }
 
 #project {
-    text-align: center;
-    background-image: linear-gradient(to left, #0f2027, #203a43, #2c5364);
-    overflow: auto;
+  text-align: center;
+  background-image: linear-gradient(to left, #0f2027, #203a43, #2c5364);
+  overflow: auto;
 }
 
-#project h3{
-    text-transform: uppercase;
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 40px;
-    margin-bottom: 100px;
-    overflow: auto;
+#project h3 {
+  text-transform: uppercase;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+  margin-bottom: 100px;
+  overflow: auto;
 }
 
-
-
-#project .api-content{
-    background-color: white;
-    margin-left: 100px;
-    border-radius: 12px;
-    padding: 20px;
-    width: 40%;
-    overflow: auto;
+#project .api-content {
+  background-color: white;
+  margin-left: 100px;
+  border-radius: 12px;
+  padding: 20px;
+  width: 20%;
+  overflow: auto;
 }
 
-#project .img-content{
-    float: left;
-    width: 40%;
-    padding: 40% 0 40% 0;
-    margin-bottom: 20px;
-    border-right: solid;
-}
-#project h4{
-    text-transform: uppercase;
-    color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-bottom: 30px;
-    background-color: #24434f;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 12px;
+#project .img-content {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-#project .api-content .description{
-
-    font-family: sans-serif;
-    color: black;
-    float: right;
-    text-align: start;
-    margin-right: 100px;
-    margin-bottom: 40px;
-    width: 30%;
+#project .isi {
+  display: block;
 }
 
-#project .api-content h5{
-    width: 30%;
-    float: right;
-    font-size: large;
-    text-transform: uppercase;
-    color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-bottom: 30px;
-    background-color: #24434f;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 12px;
-    margin-right: 100px;
-    font-weight: 800;
+#project ul {
+  text-transform: uppercase;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  background-color: #24434f;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 12px;
 }
 
-#project .api-content button{
-    background-color: rgb(6, 149, 6);
-    padding: 15px 30px 15px 30px;
-    border-radius: 20px;
-    border-style: none;
+#project .api-content .description {
+  color: black;
+  font-size: larger;
+  text-align: start;
+  text-indent: 20px;
+  margin: 20px;
+}
+
+#project .api-content button {
+  background-color: rgb(6, 149, 6);
+  padding: 15px 30px 15px 30px;
+  border-radius: 20px;
+  border-style: none;
 }
 
 #project .api-content button a {
-    color: white;
-    text-decoration: none;
-    font-size: larger;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  }
-  
-#project .api-content button:hover {
-    background-color: rgb(16, 175, 16);
-  }
-
-.clear{
-    clear: both;
+  color: white;
+  text-decoration: none;
+  font-size: larger;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-#contact .hub{
+#project .api-content button:hover {
+  background-color: rgb(16, 175, 16);
+}
+
+.clear {
+  clear: both;
+}
+
+#contact {
   display: grid;
   justify-items: center;
   align-items: center;
 }
 
-#contact .hub ul li{
+#contact h3 {
+  text-transform: uppercase;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+  margin-bottom: 100px;
+}
+#contact .hub ul li {
   display: inline-block;
   text-align: center;
   margin: 0 20px;
@@ -272,11 +259,11 @@ svg {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-#contact .hub ul li span{
+#contact .hub ul li span {
   display: block;
 }
 
-#contact .lokasi{
+#contact .lokasi {
   margin-top: 20px;
   text-align: center;
 }
